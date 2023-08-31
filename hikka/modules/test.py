@@ -368,7 +368,7 @@ class TestMod(loader.Module):
         chat, _ = await utils.asset_channel(
             self._client,
             "hikka-logs",
-            "🌘 Your Hikka logs will appear in this chat",
+            "🍏 Your Apple logs will appear in this chat",
             silent=True,
             invite_bot=True,
             avatar="https://github.com/hikariatama/assets/raw/master/hikka-logs.png",
