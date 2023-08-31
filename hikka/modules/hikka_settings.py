@@ -39,7 +39,7 @@ ALL_INVOKES = [
 
 @loader.tds
 class AppleSettingsMod(loader.Module):
-    """Advanced settings for Hikka Userbot"""
+    """Advanced settings for Apple Userbot"""
 
     strings = {"name": "AppleSettings"}
 
