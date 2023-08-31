@@ -13,10 +13,10 @@ from ..inline.types import InlineQuery
 
 
 @loader.tds
-class HikkaInfoMod(loader.Module):
+class AppleInfoMod(loader.Module):
     """Show userbot info"""
 
-    strings = {"name": "HikkaInfo"}
+    strings = {"name": "AppleInfo"}
 
     def __init__(self):
         self.config = loader.ModuleConfig(
@@ -26,7 +26,7 @@ class HikkaInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "custom_button",
-                ["🌘 Support chat", "https://t.me/hikka_talks"],
+                ["🧑‍💼 Support chat", "https://t.me/AppleUserbotChat"],
                 lambda: self.strings("_cfg_cst_btn"),
                 validator=loader.validators.Union(
                     loader.validators.Series(fixed_len=2),
@@ -35,7 +35,7 @@ class HikkaInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "banner_url",
-                "https://github.com/hikariatama/assets/raw/master/hikka_banner.mp4",
+                "https://github.com/AppleUserbot/Apple/assets/info.jpg",
                 lambda: self.strings("_cfg_banner"),
                 validator=loader.validators.Link(),
             ),
@@ -78,7 +78,7 @@ class HikkaInfoMod(loader.Module):
 
         return (
             (
-                "<b>🌘 Hikka</b>\n"
+                "<b>🍏 Apple Userbot</b>\n"
                 if "hikka" not in self.config["custom_message"].lower()
                 else ""
             )
@@ -114,7 +114,7 @@ class HikkaInfoMod(loader.Module):
                         (
                             utils.get_platform_emoji()
                             if self._client.hikka_me.premium and not inline
-                            else "🌘 Hikka"
+                            else "🍏 Apple Userbot"
                         ),
                         "<emoji document_id=5373141891321699086>😎</emoji>",
                         "<emoji document_id=5469741319330996757>💫</emoji>",
@@ -155,7 +155,7 @@ class HikkaInfoMod(loader.Module):
                 else {"message": self._render_info(True)}
             ),
             "thumb": (
-                "https://github.com/hikariatama/Hikka/raw/master/assets/hikka_pfp.png"
+                "https://github.com/hikariatama/Hikka/raw/master/assets/bot_pfp.png"
             ),
             "reply_markup": self._get_mark(),
         }
