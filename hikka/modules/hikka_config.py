@@ -26,10 +26,10 @@ NUM_ROWS = 5
 
 
 @loader.tds
-class HikkaConfigMod(loader.Module):
+class AppleConfigMod(loader.Module):
     """Interactive configurator for Hikka Userbot"""
 
-    strings = {"name": "HikkaConfig"}
+    strings = {"name": "AppleConfig"}
 
     @staticmethod
     def prep_value(value: typing.Any) -> typing.Any:
