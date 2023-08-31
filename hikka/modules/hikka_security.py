@@ -33,10 +33,10 @@ from ..security import (
 
 
 @loader.tds
-class HikkaSecurityMod(loader.Module):
+class AppleSecurityMod(loader.Module):
     """Control security settings"""
 
-    strings = {"name": "HikkaSecurity"}
+    strings = {"name": "AppleSecurity"}
 
     async def client_ready(self):
         self._sgroups: typing.Iterable[str, SecurityGroup] = self.pointer(
