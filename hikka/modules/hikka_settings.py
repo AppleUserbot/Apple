@@ -38,10 +38,10 @@ ALL_INVOKES = [
 
 
 @loader.tds
-class HikkaSettingsMod(loader.Module):
+class AppleSettingsMod(loader.Module):
     """Advanced settings for Hikka Userbot"""
 
-    strings = {"name": "HikkaSettings"}
+    strings = {"name": "AppleSettings"}
 
     def get_watchers(self) -> tuple:
         return [
