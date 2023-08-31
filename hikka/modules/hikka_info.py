@@ -35,7 +35,7 @@ class AppleInfoMod(loader.Module):
             ),
             loader.ConfigValue(
                 "banner_url",
-                "https://github.com/AppleUserbot/Apple/assets/info.jpg",
+                "https://github.com/AppleUserbot/Apple/tree/master/assets/info.jpg",
                 lambda: self.strings("_cfg_banner"),
                 validator=loader.validators.Link(),
             ),
