@@ -440,8 +440,8 @@ class Form(InlineUnit):
                     [
                         InlineQueryResultPhoto(
                             id=utils.rand(20),
-                            title="Hikka",
-                            description="Hikka",
+                            title="Apple",
+                            description="Apple",
                             caption=form.get("text"),
                             parse_mode="HTML",
                             photo_url=form["photo"],
@@ -460,7 +460,7 @@ class Form(InlineUnit):
                     [
                         InlineQueryResultGif(
                             id=utils.rand(20),
-                            title="Hikka",
+                            title="Apple",
                             caption=form.get("text"),
                             parse_mode="HTML",
                             gif_url=form["gif"],
@@ -479,8 +479,8 @@ class Form(InlineUnit):
                     [
                         InlineQueryResultVideo(
                             id=utils.rand(20),
-                            title="Hikka",
-                            description="Hikka",
+                            title="Apple",
+                            description="Apple",
                             caption=form.get("text"),
                             parse_mode="HTML",
                             video_url=form["video"],
@@ -500,8 +500,8 @@ class Form(InlineUnit):
                     [
                         InlineQueryResultDocument(
                             id=utils.rand(20),
-                            title="Hikka",
-                            description="Hikka",
+                            title="Apple",
+                            description="Apple",
                             caption=form.get("text"),
                             parse_mode="HTML",
                             document_url=form["file"],
@@ -520,7 +520,7 @@ class Form(InlineUnit):
                             id=utils.rand(20),
                             latitude=form["location"][0],
                             longitude=form["location"][1],
-                            title="Hikka",
+                            title="Apple",
                             reply_markup=self.generate_markup(
                                 form["uid"],
                             ),
@@ -536,7 +536,7 @@ class Form(InlineUnit):
                             audio_url=form["audio"]["url"],
                             caption=form.get("text"),
                             parse_mode="HTML",
-                            title=form["audio"].get("title", "Hikka"),
+                            title=form["audio"].get("title", "Apple"),
                             performer=form["audio"].get("performer"),
                             audio_duration=form["audio"].get("duration"),
                             reply_markup=self.generate_markup(
@@ -551,7 +551,7 @@ class Form(InlineUnit):
                     [
                         InlineQueryResultArticle(
                             id=utils.rand(20),
-                            title="Hikka",
+                            title="Ape",
                             input_message_content=InputTextMessageContent(
                                 form["text"],
                                 "HTML",
