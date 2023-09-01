@@ -116,13 +116,13 @@ class AppleInfoMod(loader.Module):
                             if self._client.hikka_me.premium and not inline
                             else "🍏 Apple Userbot"
                         ),
-                        "<emoji document_id=5373141891321699086>😎</emoji>",
-                        "<emoji document_id=5469741319330996757>💫</emoji>",
+                        "<emoji document_id=5841718330779504200>✈️</emoji>",
+                        "<emoji document_id=5843668529399729524>🌙</emoji>",
                         "<emoji document_id=5449918202718985124>🌳</emoji>",
-                        "<emoji document_id=5472111548572900003>⌨️</emoji>",
+                        "<emoji document_id=5841530748082851696>💻</emoji>",
                         "<emoji document_id=5451646226975955576>⌛️</emoji>",
-                        "<emoji document_id=5431449001532594346>⚡️</emoji>",
-                        "<emoji document_id=5359785904535774578>💼</emoji>",
+                        "<emoji document_id=5841424383217766066>🪫</emoji>",
+                        "<emoji document_id=5843702098864116098>🚫</emoji>",
                         platform,
                     ),
                 )
